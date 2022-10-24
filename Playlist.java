@@ -2,8 +2,7 @@
 import java.util.ArrayList;
 // create Playlist class
 class Playlist {
-    // create main method
-    public static void main(String[] args) {
+    public static void shufflePlaylist() {
         // ArrayList of strings
         ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
         // songs for playlist
@@ -32,5 +31,9 @@ class Playlist {
         desertIslandPlaylist.set(b, tempA);
         // print updated playlist to console
         System.out.println(desertIslandPlaylist); 
+    }
+    // create main method
+    public static void main(String[] args) {
+        shufflePlaylist();
     }
 }
