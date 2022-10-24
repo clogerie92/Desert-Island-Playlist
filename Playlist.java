@@ -22,10 +22,15 @@ class Playlist {
         // print updated size and playlist
         System.out.println(desertIslandPlaylist.size());
         System.out.println(desertIslandPlaylist);
-        // change order of playlist
         // variables to store song index
         int a = desertIslandPlaylist.indexOf("Through The Late Night");
-        int b = 
-
+        int b = desertIslandPlaylist.indexOf("Carousel");
+        // variable to store temporary string
+        String tempA = "Through The Late Night";
+        // change order of playlist
+        desertIslandPlaylist.set(a, "Carousel");
+        desertIslandPlaylist.set(b, tempA);
+        // print updated playlist to console
+        System.out.println(desertIslandPlaylist); 
     }
 }
