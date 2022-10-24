@@ -13,6 +13,10 @@ class Playlist {
         desertIslandPlaylist.add("I Can Tell");
         desertIslandPlaylist.add("Motorcycle Patches");
         desertIslandPlaylist.add("Skeletons");
+        // print playlist to console
+        System.out.println(desertIslandPlaylist);
+        // print size of playlist to console
+        System.out.println(desertIslandPlaylist.size());
         
 
 
