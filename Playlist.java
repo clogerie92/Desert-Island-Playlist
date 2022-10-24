@@ -7,11 +7,11 @@ class Playlist {
     public static void shufflePlaylist() {
         // ArrayList of strings
         List<String> desertIslandPlaylist = Arrays.asList("Through The Late Night", "Carousel", "Never Catch Me", "I Can Tell", "Motorcycle Patches", "Skeletons");
-        // print playlist to console
-        System.out.println("Original playlist: " + desertIslandPlaylist);
         // print size of playlist to console
         int playlistSize = desertIslandPlaylist.size();
         System.out.println("The playlist size is: " + playlistSize);
+        // print playlist to console
+        System.out.println("Original playlist: " + desertIslandPlaylist);
         // shuffle playlist
         Collections.shuffle(desertIslandPlaylist);
         System.out.println("Shuffled playlist: " + desertIslandPlaylist);
@@ -29,8 +29,8 @@ class Playlist {
         // remove a song
         desertIslandPlaylist.remove("Skeletons");
         // print updated size and playlist
-        System.out.println(desertIslandPlaylist.size());
-        System.out.println(desertIslandPlaylist);
+        System.out.println("The playlist size is now: " + desertIslandPlaylist.size());
+        System.out.println("Updated playlist: " + desertIslandPlaylist);
         // variables to store song index
         int a = desertIslandPlaylist.indexOf("Through The Late Night");
         int b = desertIslandPlaylist.indexOf("Carousel");       
@@ -39,8 +39,8 @@ class Playlist {
         // change order of playlist
         desertIslandPlaylist.set(a, "Carousel");
         desertIslandPlaylist.set(b, tempA);
-        // print updated playlist to console
-        System.out.println("Playlist in order: " + desertIslandPlaylist);
+        // swapped playlist
+        System.out.println("Swapped playlist: " + desertIslandPlaylist);
         // reverse playlist
         Collections.reverse(desertIslandPlaylist);
         System.out.println("Reversed playlist: " + desertIslandPlaylist); 
